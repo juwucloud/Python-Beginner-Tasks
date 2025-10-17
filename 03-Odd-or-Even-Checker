@@ -1,0 +1,37 @@
+
+
+def main():
+    while True:
+        # User input
+        
+        try:
+            TestingNumber = int(input("What number do you want to check for odd or even? "))
+            if TestingNumber % 2 == 0:
+                print(f"The number {TestingNumber} is even")
+                break
+            else:
+                print(f"The number {TestingNumber} is odd")
+                break
+        except ValueError:
+                print("Invalid input, Try again")
+
+main()
+
+while True:
+    again = input ("do you want to play again? (y/n)").lower()
+    if again in ["y", "yes"]:
+        main() 
+    elif again in["n", "no"]:
+        print ("see you")
+        break
+    else: 
+        print("wrong input")
+
+
+
+
+
+
+
+
+
