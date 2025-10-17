@@ -3,6 +3,7 @@
 #Get User Input
 PasswordCheck = input("What is your new password?: ")
 
+passedCheck = False
 
 
 # checks if String is in the Password
@@ -22,9 +23,19 @@ def isNumber(a):
     print(f"Password contains a Number: {numberchecker}")
 
 
+# checks password length
+def isLongEnough(a):
+    lengthcounter = 0
+    for index in a:
+        lengthcounter += 1
+    if lengthcounter >= 8:
+        return True
+    else:
+        return False
 
 
-# lengthcounter = 0
+        
+
 # numberchecker = False
 
 
