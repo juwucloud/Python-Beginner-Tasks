@@ -1,18 +1,11 @@
 
-
-#Get User Input
-PasswordCheck = input("What is your new password?: ")
-
-passedCheck = False
-
-
 # checks if String is in the Password
 def isString(a):
     stringchecker = False
     for index in a:
         if index.isalpha() == True:
             stringchecker = True
-    print(f"Password contains a String: {stringchecker}")
+    return stringchecker
 
 # checks if Number is in the Password
 def isNumber(a):
@@ -20,7 +13,7 @@ def isNumber(a):
     for index in a:
         if index.isnumeric() == True:
             numberchecker = True
-    print(f"Password contains a Number: {numberchecker}")
+    return numberchecker
 
 
 # checks password length
@@ -33,14 +26,14 @@ def isLongEnough(a):
     else:
         return False
 
+# Main check
+def passwordchecker():
+    PasswordCheck = input("What is your new password?: ")
+    if isString(PasswordCheck) == True and isNumber(PasswordCheck) == True and isLongEnough(PasswordCheck) == True:
+        print ("Your Password meets all criteria!")
+    else:
+        print ("Your Password is insufficient")
 
-        
 
-# numberchecker = False
-
-
-
-#isString(PasswordCheck)
-
-
+passwordchecker()
 
