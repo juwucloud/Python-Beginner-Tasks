@@ -1,0 +1,13 @@
+
+
+def factorial(a):
+    result = 1 
+    for index in range(2, a+1, 1):
+        result *= index
+    return result
+
+factorialnumber = int(input("What number do you want the factorial of? "))
+solution = factorial(factorialnumber)
+
+print(f"The factorial of {factorialnumber} is {solution}")
+
