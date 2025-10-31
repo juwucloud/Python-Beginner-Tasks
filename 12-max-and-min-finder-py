@@ -1,0 +1,9 @@
+#Ask the user to input a list of numbers 
+#and find the maximum and minimum numbers in that list.
+
+
+def findmin([]):
+    return min([])
+
+def findmax([]):
+    return max([])
